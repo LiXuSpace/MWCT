@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/wallpaper_3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="请填写送餐地址"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:theme="@style/MyEditText"
+            android:textColorHint="@android:color/white"
+            android:layout_width="match_parent"
+            android:id="@+id/address_pp"
+            android:hint="请输入地址"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="请输入姓名"
+            android:theme="@style/MyEditText"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/name_pp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="请输入电话号码"
+            android:theme="@style/MyEditText"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/phone_pp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:id="@+id/pp_btn"
+            android:background="#bbb6b6b6"
+            android:text="确定"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

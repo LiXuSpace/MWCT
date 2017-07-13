@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_height="136dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        android:layout_height="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/dingdan_iv"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/dingdan_food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/dingdan_iv"
+                android:text="烧烤大包"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/bbbb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dingdan_food_name"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:text="￥"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/dingdan_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/bbbb"
+                android:layout_marginBottom="8dp"
+                android:text="$15"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="24sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="12dp"
+                android:elevation="4dp"
+
+                android:src="@android:drawable/ic_input_add"
+                app:backgroundTint="@android:color/holo_orange_light"
+                app:borderWidth="0dp" />
+
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/dingdan_fab"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="12dp"
+                android:elevation="4dp"
+                android:focusable="false"
+                android:src="@android:drawable/ic_input_add"
+                app:backgroundTint="@android:color/holo_orange_light"
+                app:borderWidth="0dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11d7d7d7"
+    android:orientation="vertical">
+
+    <!--头部的布局 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/p4" />
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:transitionName="trans_img"
+                android:id="@+id/login_iv"
+                android:clickable="true"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/unlogin" />
+
+            <TextView
+                android:clickable="true"
+                android:id="@+id/login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#663c7b17"
+                android:text="点击登陆"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--  *************************************     -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 我的收藏-->
+        <RelativeLayout
+            android:id="@+id/store_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bgcolor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="我的收藏"
+                android:layout_toRightOf="@+id/shoucang_iv"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ajk"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="16dp" />
+
+            <ImageView
+                android:id="@+id/shoucang_iv"
+                android:layout_width="56dp"
+                android:padding="18dp"
+                android:src="@drawable/storage_icon1"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
+
+        <!--关于-->
+        <RelativeLayout
+            android:id="@+id/about_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/bgcolor">
+
+            <ImageView
+                android:id="@+id/guanyu_iv"
+                android:layout_width="56dp"
+                android:src="@drawable/about_icon1"
+                android:padding="18dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ajk"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="关于"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/guanyu_iv"
+                android:layout_height="match_parent"
+                android:id="@+id/textView" />
+
+        </RelativeLayout>
+        <!--客服中心-->
+        <RelativeLayout
+            android:id="@+id/service_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/bgcolor">
+
+            <ImageView
+                android:id="@+id/kefu_iv"
+                android:layout_width="56dp"
+                android:padding="16dp"
+                android:src="@drawable/kefu_icon1"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="客服中心"
+                android:layout_toRightOf="@id/kefu_iv"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ajk"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="16dp" />
+
+        </RelativeLayout>
+        <!-- 我的评价-->
+        <RelativeLayout
+            android:id="@+id/conment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/bgcolor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="注销并退出"
+                android:layout_toRightOf="@+id/pingjia_iv"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ajk"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="16dp" />
+
+            <ImageView
+                android:id="@+id/pingjia_iv"
+                android:layout_width="56dp"
+                android:src="@drawable/pingjia_icon1"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:padding="16dp"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
